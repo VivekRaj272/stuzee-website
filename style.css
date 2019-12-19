@@ -10,7 +10,7 @@
 .consult-stat {
     display: block;
     background-color: #F7964F;
-    padding: 15px 20px;
+    padding: 10px 20px;
     margin: 5px -12px -5px -12px;
     border-radius: 0px 0px 15px 15px;
     color: #ffffff !important;
@@ -76,13 +76,33 @@
     margin-bottom: 0px;
 }
 
+.terms-high-text {
+    display: inline-block;
+    font-size: 40px;
+    color: #264678;
+    font-weight: bold;
+    font-family: 'Avenir-Black' !important;
+    margin: 20px 0px;
+}
+
 .high-text {
     display: inline-block;
     font-size: 40px;
     color: #264678;
     font-weight: bold;
     font-family: 'Avenir-Black' !important;
+    margin: 20px 0px;
 
+}
+
+.load-high-text {
+    display: inline-block;
+    font-size: 50px;
+    color: #264678;
+    font-weight: bold;
+    font-family: 'Avenir-Black' !important;
+    margin: 20px 0px;
+    line-height: 50px;
 }
 
 .cont-btn img {
@@ -224,7 +244,7 @@
 
 .searchTerm {
     width: 100%;
-    border: 2px solid #293A80;
+    border: 1px solid #293A80;
     border-right: none;
     padding: 15px;
     border-radius: 10px 0 0 10px;
@@ -242,7 +262,7 @@
 }
 
 .searchButton {
-    border: 2px solid #293A80;
+    border: 1px solid #293A80;
     background: rgba(255, 255, 255, 0.5);
     text-align: center;
     color: #000;
@@ -642,6 +662,7 @@ img.discuss-img {
     z-index: 999;
     bottom: 0;
     padding-top: 20px;
+    opacity: 0.9;
 }
 
 .stuzee-tagline {
@@ -687,7 +708,7 @@ img.discuss-img {
 .stuzee-thumb {
     border-radius: 15px;
     padding: 10px;
-    height: 300px;
+    height: 315px;
     text-align: center;
     margin: 50px 0px 100px 0px;
     background-color: #fff;
@@ -723,6 +744,8 @@ img.discuss-img {
 .stuzee-header {
     letter-spacing: 1px;
     color: #264678;
+    font-family: 'Avenir-Black' !important;
+
 }
 
 .feature-header {
@@ -766,6 +789,7 @@ img.discuss-img {
     width: auto;
     padding: 10px;
     text-align: left;
+    margin-top: 15px;
 }
 
 .cont-bar-title {
@@ -773,7 +797,7 @@ img.discuss-img {
     padding: 15px;
     margin: 0px;
     font-size: 24px;
-    margin-left:25px;
+    margin-left: 25px;
 }
 
 .cont-btn {
@@ -956,7 +980,7 @@ img.discuss-img {
     font-size: 22px !important;
 }
 
-.time-stamp{
+.time-stamp {
     margin-bottom: 0px;
     display: inline-block;
 }
@@ -968,7 +992,6 @@ img.discuss-img {
     font-family: 'Avenir-Black';
     font-size: 18px;
     color: #293A80;
-    margin-top: 20px;
 }
 
 .read-time {
@@ -1041,8 +1064,7 @@ img.discuss-img {
 
 
 .clg-feature-info {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 35px 0px;
 }
 
 .feature-card {
@@ -1055,6 +1077,7 @@ img.discuss-img {
 .art-que {
     margin-bottom: 0px !important;
     color: #264678;
+    font-size: 22px;
 }
 
 .art-ans {
@@ -1155,7 +1178,7 @@ img.discuss-img {
 
 .brand-motto {
     color: #264678;
-    width: 85%;
+    width: 70%;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Avenir-Black';
@@ -1169,7 +1192,7 @@ img.discuss-img {
 
 .stuzee-brand-block {
     background-image: url(images/footer-bg.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 30px 30px 30px 140px;
 }
@@ -1555,6 +1578,14 @@ ul li img {
     content: "/";
 }
 
+.terms-wrap {
+    white-space: pre-wrap;
+    font-family: 'Avenir-Book';
+    color: #828282;
+    font-size: 20px;
+    text-align: justify;
+}
+
 /*override modal for demo only*/
 .modal-dialog {
     max-width: 500px;
@@ -1575,6 +1606,7 @@ ul li img {
     padding: 0;
     margin-left: -100px;
     list-style: none outside none;
+
 }
 
 .list-cards li {
@@ -1614,6 +1646,8 @@ ul li img {
 
 .section-products-cards {
     z-index: 1;
+    padding-top: 100px;
+
 }
 
 .section-products-cards .container {
@@ -1761,6 +1795,12 @@ ul li img {
 
 }
 
+.stuz-terms-bread {
+    padding-left: 0px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
 .bread-slice {
     color: #293A80;
 }
@@ -1787,7 +1827,26 @@ ul li img {
 .we-info p {
     font-size: 24px;
     color: #828282;
-    margin-top: 40px;
+    margin-top: 25px;
+}
+
+.getstart-btn {
+    background-color: #F7964F;
+    border: none;
+    border-radius: 36px;
+    padding: 10px 45px;
+    color: #FBFBFB;
+    font-size: 20px;
+    outline: none !important;
+}
+
+.stu-bios {
+    margin-top: 35px;
+}
+
+.unihelp-text {
+    font-family: 'Avenir-Medium';
+    color: #293A80;
 }
 
 .mission-info {
@@ -1799,19 +1858,123 @@ ul li img {
     padding: 20px;
     margin: 40px -15px -15px -15px;
     color: #F0EEFF;
+    position: relative;
 }
 
 .mission-text {
     width: 55%;
     font-size: 25px;
     line-height: 35px;
-    display: block;
-    margin: 50px auto;
+    margin: 4% auto;
     word-break: break-word;
+    position: absolute;
+    padding: 20px;
+    font-family: 'Avenir-Book';
+}
+
+.mission-text p span {
+    color: #F0EEFF !important;
+    margin-top: 30px;
+}
+
+
+.mission-text h2 {
+    font-size: 45px;
 }
 
 .brand-bio {
     margin-top: 50px;
+}
+
+
+
+
+.backhome-btn {
+    background-color: #F0EEFF;
+    color: #293A80;
+    outline: none !important;
+    border-radius: 35px;
+    padding: 12px 40px;
+    border: none;
+    display: block;
+    margin-top: 50px;
+}
+
+
+.feat-load-info {
+    font-family: 'Avenir-Book';
+    font-size: 24px;
+    color: #828282;
+}
+
+
+.sub-text {
+    color: #F7964F;
+    display: block;
+}
+
+.load-feat-wrap {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.load-screen {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+
+.load-feat-wrap input {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #F7964F;
+    width: 100%;
+    margin-top: 10px;
+    outline: none !important;
+
+}
+
+.input-wrap {
+    position: relative;
+    width: 70%;
+}
+
+.input-wrap span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.input-wrap button {
+    border: none;
+    background-color: #F7964F;
+    padding: 11px 25px;
+    border-radius: 35px;
+    color: #ffffff;
+    outline: none !important;
+}
+
+.back-link {
+    padding: 10px;
+    font-family: 'Avenir-Medium';
+    color: #264678;
+}
+
+.back-link span {
+    margin-right: 10px;
+}
+
+.loading-wrap {
+    padding: 25px;
+    text-align: left;
+    max-width: 600px;
+    height: auto;
+}
+
+.loading-wrap img {
+    width: 100%;
+    height: 100%;
+
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

@@ -27,6 +27,12 @@
     src: url('fonts/Avenir-Roman.otf') format('OpenType');
 }
 
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('fonts/Avenir-Book.ttf') format('TrueType');
+}
+
+
 
 // font-families
 
@@ -49,6 +55,11 @@
 .Avenir-Roman {
     font-family: 'Avenir-Roman';
 }
+
+.Avenir-Book {
+    font-family: 'Avenir-Book';
+}
+
 
 
 // colors
