@@ -54,11 +54,11 @@
 /* abraod*/
 
 .abroad-box {
-    background-image: url(images/abroad-img.png);
+    background-image: url(images/plane-bg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 750px !important;
+    min-height: 980px !important;
     position: relative;
     font-family: 'Avenir-Heavy' !important;
     width: 100%;
@@ -91,12 +91,38 @@
     color: #264678;
     font-weight: bold;
     font-family: 'Avenir-Black' !important;
-    margin: 20px 0px;
+}
+
+.clg-high-text {
+    display: inline-block;
+    font-size: 34px;
+    color: #264678;
+    font-weight: bold;
+    font-family: 'Avenir-Black' !important;
+}
+
+.plug-screen {
+    background: url(images/500.png);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
 .load-high-text {
     display: inline-block;
+    font-size: 50px;
+    color: #264678;
+    font-weight: bold;
+    font-family: 'Avenir-Black' !important;
+    margin: 20px 0px;
+    line-height: 50px;
+}
+
+.five-high-text {
+     display: inline-block;
     font-size: 50px;
     color: #264678;
     font-weight: bold;
@@ -113,6 +139,7 @@
     font-size: 28px;
     color: #828282;
     margin-bottom: 0px;
+    text-align: center;
 }
 
 
@@ -202,6 +229,17 @@
 .university-services {
     margin-top: 50px;
     background-color: #f0f0f0;
+}
+
+.univ-location {
+    color: #F7964F;
+}
+
+.univ-found span {
+    color: #828282;
+    margin-right: 20px;
+    font-family: 'Avenir-Book';
+    font-size: 20px;
 }
 
 
@@ -826,7 +864,10 @@ img.discuss-img {
 
 .univ-info {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
+    min-height: 150px;
+    padding: 20px;
+    border-bottom: 2px solid #F0EEFF;
 }
 
 .university-block {
@@ -836,7 +877,7 @@ img.discuss-img {
     background-color: #ffffff;
     box-shadow: 0px 3px 12px #26467840;
     margin-bottom: 10px;
-    height: 650px;
+    height: 560px;
 }
 
 .uni-btn-wrap {
@@ -965,15 +1006,74 @@ img.discuss-img {
 }
 
 .univ-info-thumb {
-    border: 1px solid #cccccc;
     padding: 10px;
     border-radius: 10px;
     margin-top: 15px;
-    // min-height: 130px;
-    // max-height: 130px;
+    min-height: 145px;
+    max-height: 145px;
     align-items: center;
     display: grid;
     text-align: center;
+}
+
+.univ-info-alt-thumb {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    min-height: 120px;
+    max-height: 120px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+}
+
+
+.univ-scholor {
+    padding: 10px;
+    margin-top: 15px;
+    min-height: 100px;
+    max-height: 100px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    background-color: #FFF1E8F9;
+    border-radius: 15px 0px 0px 15px;
+    color: #293A80;
+    margin-right: -26px;
+}
+
+
+.univ-scholor p span{
+    color: #293A80;
+    font-size: 20px;
+    white-space: pre-wrap;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 0;
+    font-family: 'Avenir-Black';
+}
+
+
+.univ-info-alt-thumb h2 {
+    color:#293A80;
+    text-align: left;
+}
+
+.univ-sub {
+    color: #293A80;
+    font-size: 24px;
+    word-break: break-word;
+    line-height: 28px;
+    text-align: left;
+    text-overflow: ellipsis;
+    height: 35px;   
+    margin-bottom: 0px;
+}
+
+.univ-count {
+    color: #293A80;
+    font-size: 34px;
+    padding: 20px;
 }
 
 .univ-info-thumb h2 {
@@ -1192,7 +1292,7 @@ img.discuss-img {
 
 .stuzee-brand-block {
     background-image: url(images/footer-bg.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 30px 30px 30px 140px;
 }
@@ -1905,6 +2005,12 @@ ul li img {
     font-family: 'Avenir-Book';
     font-size: 24px;
     color: #828282;
+}
+
+.five-load-info {
+    color: #FBFBFB;
+    font-size: 40px;
+    font-family: 'Avenir-Medium';
 }
 
 
