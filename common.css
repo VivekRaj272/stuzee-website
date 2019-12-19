@@ -1,0 +1,247 @@
+// variables
+
+// $stuzee-primary :#293A80 !important;
+// $stuzee-light : #F7964F !important;
+// $stuzee-title : #264678 !important;
+
+// font faces
+
+
+@font-face {
+    font-family: 'Avenir-Heavy';
+    src: url('fonts/Avenir-Heavy.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('fonts/Avenir-Medium.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('fonts/Avenir-Black.ttf') format('TrueType');
+}
+
+@font-face {
+    font-family: 'Avenir-Roman';
+    src: url('fonts/Avenir-Roman.otf') format('OpenType');
+}
+
+
+// font-families
+
+// .Avenir {
+//     font-family: 'Avenir';
+// }
+
+.Avenir-Heavy {
+    font-family: 'Avenir-Heavy';
+}
+
+.Avenir-Medium {
+    font-family: 'Avenir-Medium';
+}
+
+.Avenir-Black {
+    font-family: 'Avenir-Black';
+}
+
+.Avenir-Roman {
+    font-family: 'Avenir-Roman';
+}
+
+
+// colors
+
+.stuzee-primary {
+    color: $stuzee-primary;
+}
+
+.stuzee-grey {
+    color: #666666 !important;
+}
+
+.stuzee-header-shade {
+    color: #333333 !important;
+}
+
+.black {
+    color: #000000 !important;
+}
+
+.white {
+    color: #ffffff !important;
+}
+
+.stuzee-fade {
+    color: #949494 !important;
+}
+
+.stuzee-light {
+    color: #cccccc !important;
+}
+
+
+.stuzee-sky {
+    color: #01325b !important;
+}
+
+.stuzee-skydark {
+    color: #153797 !important;
+}
+
+.stuzee-aqua {
+    color: #1850d2 !important;
+}
+
+.stuzee-leaf {
+    color: #5fb870 !important;
+}
+
+.stuzee-vio {
+    color: #3d30a4 !important;
+}
+
+// font sizes
+
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-12 {
+    font-size: 12px !important;
+}
+
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-16 {
+    font-size: 16px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-22 {
+    font-size: 22px !important;
+}
+
+.font-24 {
+    font-size: 24px !important;
+}
+
+.font-26 {
+    font-size: 26px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.font-40 {
+    font-size: 40px !important;
+}
+
+.font-48 {
+    font-size: 48px !important;
+}
+
+.font-70 {
+    font-size: 70px !important;
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.font-light {
+    font-weight: 400 !important;
+}
+
+.font-normal {
+    font-weight: 500 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-rigth {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+// common css
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bgclr-main {
+    background-color: #f4f7fc !important;
+}
+
+.no-outline {
+    outline: none !important;
+}
+
+.no-box-shadow {
+    box-shadow: none !important;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.upper-case {
+    text-transform: uppercase;
+}
+
+.border-right {
+    border-right: 1px solid #ccc;
+}
+
+.border-left {
+    border-left: 1px solid #ccc;
+}
+
+.border-bottom {
+    border-left: 1px solid #ccc;
+}
+
+.section-space {
+    margin-top: 60px;
+}
+
+.top-space {
+    margin-top: 20px;
+}
+
+.bottom-space {
+    margin-top: 20px;
+}
+.stuzee-mockup {
+    display: flex;
+    height: 70vh;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.pad-zero {
+    padding: 0px !important;
+}
