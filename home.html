@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stuzee-v2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="skrollr.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="stuzee-homewrap">
+            <nav class="stuzee-nav navbar navbar-default navbar-expand-lg navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand stuzee-nav-logo" href="#">
+                        <img src="images/brand.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse justify-content-start" id="Stuzee-nav">
+                    <ul class="nav navbar-nav navbar-right ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link no-outline" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-outline" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link stuzee-reg-btn no-outline" href="#">Sign in / Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="wrap">
+                <div class="search">
+                    <input class="searchTerm" placeholder=" Search by University name " type="text">
+                    <button class="searchButton" type="submit">
+                        <div class="search-line"> </div>
+                        <span>
+                            <img src="images/mag-search.png">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="mouse-wrap" id="mscroll">
+                <div class="mouse-scroll">
+                    <span class="mouse-btn">
+                        <img src="images/mouse.png" class="mouse-click ">
+                    </span>
+                </div>
+                <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.mouse-btn').click(() => {
+                        console.log("alsjdflasjdflsj")
+                        $('html, body').animate({
+                            scrollTop: $('#mscroll').offset().top
+                        }, 50);
+                    });
+                })
+                </script>
+            </div>
+            <div class="container">
+                <div class="home-btn-group Avenir-Medium">
+                    <div aria-label="Basic example" class="btn-group flex-wrap font-16" role="group">
+                        <button class="btn btn-homenav" type="button">Areas of study</button>
+                        <button class="btn btn-homenav" type="button">Universities</button>
+                        <button class="btn btn-homenav" type="button">Scholarships</button>
+                        <button class="btn btn-homenav" type="button">Exams</button>
+                        <button class="btn btn-homenav" type="button">Articles</button>
+                        <button class="btn btn-homenav" style="border-right: none;" type="button">Discussions</button>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+
+                    //>=, not <=
+                    if (scroll >= 450) {
+                        //clearHeader, not clearheader - caps H
+                        $(".home-btn-group").addClass("sticky");
+                    }
+                    if (scroll <= 450) {
+                        //clearHeader, not clearheader - caps H
+                        $(".home-btn-group").removeClass("sticky");
+                    }
+                });
+
+                window.onload = function() {
+                    let s = skrollr.init();
+                }
+                </script>
+            </div>
+        </section>
+    </div>
+    <div class="container-fluid">
+        <section>
+            <div class="abroad-box">
+                <div class="container">
+                    <div class="abroad-msg" id="mscroll">
+                        <h1>One stop solution for students to </h1><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <span class="high-text">pursue higher studies abroad</span>
+                    </div>
+                    <div class="abroad-tag">
+                        <p>Stuzee helps you to get enrolled in the best suited <br> Universities abroad based on your aspirations and academics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="abroad-msg">
+                    <h1>Stay tuned to experience </h1>
+                    <span> Stuzee in <span class="high-text"> more handy mode</span></span>
+                </div>
+                <div class="section-products-cards">
+                    <div class="section-content animated">
+                        <div class="content-wrapper"></div>
+                        <ul class="list-cards clearfix Avenir-Medium">
+                            <li class="pos1" data-150-top="transform: translate(0px, 0px); " data-500-top="transform: translate(7px, -486px);">
+                                <img src="images/consultancies-card.png">
+                            </li>
+                            <li class="pos2" data-150-top="transform: translate(-50px, 50px); " data-500-top="transform: translate(343px, -457px);">
+                                <img src="images/flashcards-card.png">
+                            </li>
+                            <li class="pos3" data-150-top="transform: translate(-50px, 250px); " data-500-top="transform: translate(-413px, -210px);">
+                               <img src="images/univ-one.png">
+                            </li>
+                            <li class="pos4" data-150-top="transform: translate(-50px, 50px); " data-500-top="transform: translate(-333px, -435px);">
+                                <img src="images/exam-card.png">
+                            </li>
+                            <li class="pos5" data-150-top="transform: translate(0px, 0px); " data-500-top="transform: translate(-170px, -315px);">
+                                <img src="images/events-cards.png">
+                            </li>
+                            <li class="pos6" data-150-top="transform: translate(0px, 0px); " data-500-top="transform: translate(4px, -244px);">
+                                <img src="images/articles-cards.png">
+                            </li>
+                            <li class="pos7" data-150-top="transform: translate(-50px, 200px); " data-500-top="transform: translate(180px, -321px);">
+                                <img src="images/discussions-card.png">
+                            </li>
+                            <li class="pos8" data-150-top="transform: translate(-50px, 250px); " data-500-top="transform: translate(416px, -216px);">
+                                <img src="images/admissions-card.png">
+                            </li>
+                        </ul>
+                        <div class="mblmockup-wrap">
+                            <img src="images/stuzee-mbl.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="apps-tag">
+                    <p>Stuzee will be available soon with a more intuitive experience on <br> both iOS and Android.</p>
+                </div>
+            </div>
+        </section>
+        <section class="consultancy-services">
+            <div class="stu-head-wrap">
+                <h1 class="stuzee-header Avenir-Black">Consultancy Services</h1>
+                <h3 class="stuzee-info Avenir-Medium">
+                    Stuzee provides you with various types of services
+                    <br>
+                    which helps you in studying abroad...
+                    </br>
+                </h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="stuzee-thumb">
+                                <div class="stu-thumb-wrap">
+                                    <img src="images/campus.png">
+                                </div>
+                                <h3 class="services-title">Admission Services</h3>
+                                <span class="consult-stat stuzee-lilac Avenir-Heavy">521 <span class="Avenir-Medium font-20"> consultants </span> </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="stuzee-thumb">
+                                <div class="stu-thumb-wrap">
+                                    <img src="images/finance.png">
+                                </div>
+                                <h3 class="services-title">Financial Services</h3>
+                                <span class="consult-stat stuzee-lilac Avenir-Heavy">121 <span class="Avenir-Medium font-20"> consultants </span></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                            <div class="stuzee-thumb">
+                                <div class="stu-thumb-wrap">
+                                    <img src="images/visa.png">
+                                </div>
+                                <h3 class="services-title">Visa Processing</h3>
+                                <span class="consult-stat stuzee-lilac Avenir-Heavy">67 <span class="Avenir-Medium font-20"> consultants </span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+    </div>
+    <div class="container">
+        <div class="stuz-cont-bar">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                    <h3 class="cont-bar-title Avenir-Medium">Want STUZEE to guide you from start to end ?</h3>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="cont-btn-wrap">
+                        <a href="#" class="cont-btn Avenir-Black">CONTACT US NOW <span> <img src="images/white-right.png"> </span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="university-services" id="univ-scroll">
+        <div class="stu-head-wrap">
+            <h1 class="stuzee-header Avenir-Heavy">Featured Universities</h1>
+            <span class="stuzee-info Avenir-Medium">This featured universities will help you to find out the top rated universities across the globe</span>
+        </div>
+    </section>
+    <div class="carousel slide" data-ride="carousel" id="demo">
+        <ul class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#demo"></li>
+            <li data-slide-to="1" data-target="#demo"></li>
+            <li data-slide-to="2" data-target="#demo"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="university-block">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="university-block">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="university-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" data-slide="prev" href="#demo">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" href="#demo">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="uni-btn-wrap">
+            <button class="all-uni-btn Avenir-Heavy">Browse all universities <span> <img src="images/blue-right.png"> </span> </button>
+        </div>
+    </div>
+    <section class="article-services">
+        <div class="stu-head-wrap">
+            <h1 class="feature-header">Featured Articles</h1>
+            <span class="stuzee-info">This featured articles will help you to find out what is </br>trending in the education sector abroad</span>
+        </div>
+        <div class="container">
+            <div class="feature-card">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="feature-img-wrap">
+                            <img src="images/col-univ.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="clg-feature-info">
+                            <h4 class="Avenir-Heavy art-que">How much it cost to study abroad?</h4>
+                            <p class="time-stamp Avenir-Medium">Oct 02 , 2019</p> <span class="read-time">10 min read</span>
+                            <p class="Avenir-Medium art-ans">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s the industry's standard dummy text.lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <span class="article-author">Columbia University, USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="feature-img-wrap">
+                            <img src="images/oxford-univ.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="clg-feature-info">
+                            <h4 class="Avenir-Heavy art-que">How much it cost to study abroad?</h4>
+                            <p class="time-stamp Avenir-Medium">Oct 02 , 2019</p> <span class="read-time">2 min read</span>
+                            <p class="Avenir-Medium art-ans">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s the industry's standard dummy text.lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <span class="article-author">Oxford University, England</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="feature-img-wrap">
+                            <img src="images/gothen-univ.png">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="clg-feature-info">
+                            <h4 class="Avenir-Heavy art-que">How much it cost to study abroad?</h4>
+                            <p class="time-stamp Avenir-Medium">Oct 02 , 2019</p> <span class="read-time">8 min read</span>
+                            <p class="Avenir-Medium art-ans">lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s the industry's standard dummy text.lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <span class="article-author">University of Gothenburg, Sweden</span>
+                            <!--                       <div class="btn-group-wrap Avenir-Medium">
+                                <div aria-label="Basic example" role="group">
+                                    <button class="btn btn-passive" type="button">Universities</button>
+                                    <button class="btn btn-passive" type="button">Education</button>
+                                    <button class="btn btn-passive" type="button">Country</button>
+                                    <button class="btn btn-tagit" type="button">Tag something</button>
+                                    <span class="more-tags">+2 more</span>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="article-btn-wrap">
+                <a class="all-article-btn Avenir-Heavy" href="#">Browse all articles <img src="images/blue-right.png"> </span> </a>
+            </div>
+        </div>
+    </section>
+    </section>
+    </div>
+</body>
+<section class="stuzee-footer">
+    <div class="footer-wrap Avenir-Medium">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="stuzee-brand-block">
+                    <div class="digi-logo-wrap">
+                        <a href="#">
+                            <img src="images/footer-brand.png">
+                        </a>
+                    </div>
+                    <p class="brand-motto"> Our Mission is to empower students to get placed in their dream universities abroad.</p>
+                    <span> Follow us on : <span>
+                            <div class="social-wrapper">
+                                <ul class="social-widget">
+                                    <li>
+                                        <a href="https://www.facebook.com" target="_blank">
+                                            <img src="images/facebook.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com" target="_blank">
+                                            <img src="images/linkedin.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com" target="_blank">
+                                            <img src="images/twitter.png">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com" target="_blank">
+                                            <img src="images/insta.png">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="font-16 Avenir-Medium black top-space"></p>
+                            </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div>
+                    <ul class="stuzee-contents-list black">
+                        <h2 class="foot-head">Contact us<span class="grey-joy"></span> </h2>
+                        <li class="foot-sub">Email</li>
+                        <li>
+                            <a href="/#">Hello@hamzek.com</a>
+                        </li>
+                        <li class="foot-sub top-space">Phone number</li>
+                        <li>
+                            <a href="/#">+91 9999999999</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="adrs-block-info">
+                    <p class="brand-adrs black">
+                        <h2 class="foot-head">Meet us<span class="grey-joy"></span> </h2>
+                        <span class="foot-sub">Address</span>
+                        Hamzek Pvt.Ltd,
+                        <br />
+                        Plot no.C-16, IDA, Uppal,
+                        <br />
+                        Hyderabad - 500039
+                        <br />
+                        Telangana - India
+                    </p>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="min-footer">
+        <div class="container">
+            <div class="min-foot-wrap  Avenir-Medium">
+                <p>© Hamzek Solutions Pvt .Ltd 2019, All rights reserved</p>
+                <div class="terms-wrap"><span>Terms and conditions </span><span> Privacy policy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</html>

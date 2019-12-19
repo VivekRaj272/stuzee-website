@@ -10,7 +10,7 @@
 .consult-stat {
     display: block;
     background-color: #F7964F;
-    padding: 15px;
+    padding: 15px 20px;
     margin: 5px -12px -5px -12px;
     border-radius: 0px 0px 15px 15px;
     color: #ffffff !important;
@@ -70,7 +70,7 @@
     font-family: 'Avenir-Medium' !important;
 }
 
-.abroad-msg h3 {
+.abroad-msg h1 {
     font-size: 28px;
     color: #828282;
     margin-bottom: 0px;
@@ -341,7 +341,7 @@ span.store-hover img {
 
 
 span.mouse-btn {
-    cursor: s-resize;
+    cursor: pointer;
 }
 
 
@@ -711,8 +711,8 @@ img.discuss-img {
 
 .min-foot-wrap {
     display: flex;
-    padding: 18px;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 .stu-head-wrap {
@@ -831,14 +831,11 @@ img.discuss-img {
     font-size: 22px;
     padding: 10px 30px;
     font-family: 'Avenir-Medium';
+    position: relative;
+    outline: none !important;
 
 }
 
-.all-uni-btn span img {
-    margin-top: -2px;
-    display: inline-block;
-    margin-left: 10px;
-}
 
 .all-uni-btn:hover {
     color: #0056b3 !important;
@@ -852,16 +849,45 @@ img.discuss-img {
     padding: 10px 30px;
 }
 
+.all-uni-btn img {
+    width: 12px;
+    height: 20px;
+    transition: 0.5s;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+}
+
+.all-uni-btn:hover img {
+    right: 5px;
+}
 
 .all-article-btn {
     font-size: 24px;
     letter-spacing: 1px;
     color: #264678;
+    position: relative;
 }
 
 .all-article-btn:hover {
     text-decoration: none;
 }
+
+.all-article-btn img {
+    width: 12px;
+    height: 20px;
+    transition: 0.5s;
+    position: absolute;
+    top: 8px;
+    right: -20px;
+}
+
+.all-article-btn:hover img {
+    right: -25px;
+}
+
+
+
 
 .university-thumb {
     border: 1px solid #ccc;
@@ -1046,10 +1072,6 @@ img.discuss-img {
 }
 
 
-.article-services {
-    margin-top: 50px;
-}
-
 .time-stamp {
     margin-bottom: 10px;
     color: #B2B2B2;
@@ -1089,13 +1111,13 @@ img.discuss-img {
 
 .stuzee-info {
     color: #828282;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Avenir-Medium';
 }
 
 .stuzee-contents-list {
     list-style: none;
-    margin-top: 85px;
+    margin-top: 60px;
 }
 
 .stuzee-footer-block {
@@ -1128,7 +1150,7 @@ img.discuss-img {
 }
 
 .stuzee-footer {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .brand-motto {
@@ -1140,7 +1162,7 @@ img.discuss-img {
 }
 
 .brand-adrs {
-    margin-top: 85px;
+    margin-top: 60px;
 }
 
 
@@ -1149,7 +1171,7 @@ img.discuss-img {
     background-image: url(images/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 30px 35px 140px;
+    padding: 30px 30px 30px 140px;
 }
 
 .stuzee-contents-list li a {
@@ -1603,12 +1625,14 @@ ul li img {
     background-image: url(images/right.png);
     width: 50px;
     height: 50px;
+    margin-left: 40px;
 }
 
 .carousel-control-prev-icon {
     background-image: url(images/left.png);
     width: 50px;
     height: 50px;
+    margin-right: 40px;
 }
 
 .holder-title {
