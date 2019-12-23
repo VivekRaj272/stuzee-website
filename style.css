@@ -1,5 +1,65 @@
 
 
+// sidemenu
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #212529;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sidepanel a:hover {
+    color: #93b2f9;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    outline: none !important;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #262261;
+    color: white;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    outline: none !important;
+    margin: 20px;
+    display: none;
+    font-size: 30px;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
 .services-title {
     color: #828282;
     width: 50%;
@@ -12,7 +72,7 @@
 .consult-stat {
     display: block;
     background-color: #F7964F;
-    padding: 10px 21px;
+    padding: 7px 21px;
     margin: -21px -10px;
     border-radius: 0px 0px 15px 15px;
     color: #ffffff !important;
@@ -102,9 +162,11 @@
     font-weight: bold;
     font-family: 'Avenir-Black' !important;
     margin-top: 20px;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     overflow: hidden;
-   text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+
 }
 
 .plug-screen {
@@ -238,7 +300,6 @@
 
 .university-services {
     margin-top: 50px;
-    background-color: #f0f0f0;
 }
 
 .univ-location {
@@ -247,14 +308,12 @@
 
 .univ-found span {
     color: #828282;
-    margin-right: 20px;
     font-family: 'Avenir-Book';
     font-size: 18px;
 }
 
 
 #demo {
-    background-color: #f0f0f0;
     padding: 20px;
 }
 
@@ -879,10 +938,11 @@ img.discuss-img {
     min-height: 150px;
     padding: 22px;
     border-bottom: 2px solid #F0EEFF;
+    padding: 10px;
 }
 
 .university-block {
-    padding: 25px;
+    padding: 35px;
     border-radius: 30px;
     margin-top: 35px;
     background-color: #ffffff;
@@ -890,6 +950,7 @@ img.discuss-img {
     margin-bottom: 10px;
     height: 580px;
     cursor: pointer;
+    margin: 15px 75px;
 
 }
 
@@ -1074,7 +1135,7 @@ img.discuss-img {
     background-color: #FFF1E8F9;
     border-radius: 15px 0px 0px 15px;
     color: #293A80;
-    margin-right: -26px;
+    margin-right: -36px;
 }
 
 
@@ -1097,6 +1158,7 @@ img.discuss-img {
     white-space: nowrap;
     overflow: hidden;
    text-overflow: ellipsis;
+   font-size: 30px;
 
 }
 
@@ -1108,17 +1170,27 @@ img.discuss-img {
     text-overflow: ellipsis;
     min-height: 55px;
     margin-bottom: 0px;
+    font-family: 'Avenir-Black' !important;
+    margin-left: 20%;
+
 }
 
 
 .urank-title {
     color: #293A80;
     font-size: 16px;
-    font-family: 'Avenir-Medium';
     background-color: #FBFBFB;
     padding: 12px 0px 12px 12px;
     border-radius: 50px;
+    font-family: 'Avenir-Medium';
 
+
+}
+
+.found-year {
+    border-left: 1px solid #FFC9A7F9;
+    padding-left: 20px;
+    margin-left: 20px;
 }
 
 
@@ -2338,6 +2410,24 @@ ul li img {
 
     .container.gallery-container {
         border-radius: 0;
+    }
+
+    .univ-sub {
+        font-size: 16px;
+        margin-left: unset;
+    }
+
+    .univ-count {
+        font-size: 20px;
+
+    }
+
+    .univ-info-alt-thumb h2 {
+        font-size: 20px;
+    }
+
+    .univ-sub-bot {
+        height: 90px;
     }
 }
 
