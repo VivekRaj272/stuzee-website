@@ -30,7 +30,7 @@
                             <a class="nav-link no-outline" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link no-outline" href="#">About us</a>
+                            <a class="nav-link no-outline" href="about-us.html">About us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link stuzee-reg-btn no-outline" href="#">Sign in / Sign up</a>
@@ -94,13 +94,16 @@
 
                 window.onload = function() {
                     let s = skrollr.init();
+                    document.getElementsByClassName("section-products-cards")[0].style.paddingTop = "50px";
+
                 }
+                document.onload = function() {}
                 </script>
             </div>
         </section>
     </div>
     <div class="container-fluid">
-        <section>
+        <section class="abroad-sec">
             <div class="abroad-box">
                 <div class="container">
                     <div class="abroad-msg" id="mscroll">
@@ -123,7 +126,6 @@
                 </div>
                 <div class="section-products-cards">
                     <div class="section-content animated">
-                        <div class="content-wrapper"></div>
                         <ul class="list-cards clearfix Avenir-Medium">
                             <li class="pos1" data-150-top="transform: translate(0px, 0px); " data-500-top="transform: translate(7px, -486px);">
                                 <img src="images/consultancies-card.png">
@@ -244,6 +246,9 @@
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                                 <div class="univ-info">
+                                    <div class="rank-wrap">
+                                        <span class="urank-title">US NEWS RANKING <span class="urank-stat">#003</span> </span>
+                                    </div>
                                     <h1 class="clg-high-text">Massachusets Institute of Technology</h1>
                                     <h2 class="Avenir-Roman font-18 univ-location">Cambridge, Massachusetts</h2>
                                     <div class="univ-found">
@@ -277,13 +282,13 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Average Tution fee</p>
+                                    <p class="univ-sub-bot">Average Tution fee</p><span class="orag-joy"></span>
                                     <h2>USD 35,000</h2>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Preferred Entrance exams</p>
+                                    <p class="univ-sub-bot">Preferred Entrance exams</p><span class="orag-joy"></span>
                                     <h2 class="">GRE, GMAT, IELTS, T..</h2>
                                 </div>
                             </div>
@@ -305,6 +310,9 @@
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                                 <div class="univ-info">
+                                     <div class="rank-wrap">
+                                        <span class="urank-title">US NEWS RANKING <span class="urank-stat">#003</span> </span>
+                                    </div>
                                     <h1 class="clg-high-text">University of Oxford</h1>
                                     <h2 class="Avenir-Roman font-18 univ-location">England</h2>
                                     <div class="univ-found">
@@ -338,13 +346,13 @@
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Average Tution fee</p>
+                                    <p class="univ-sub-bot">Average Tution fee</p><span class="orag-joy"></span>
                                     <h2>USD 35,000</h2>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Preferred Entrance exams</p>
+                                    <p class="univ-sub-bot">Preferred Entrance exams</p><span class="orag-joy"></span>
                                     <h2 class="">GRE, GMAT, IELTS, T..</h2>
                                 </div>
                             </div>
@@ -366,6 +374,9 @@
                             </div>
                             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                                 <div class="univ-info">
+                                     <div class="rank-wrap">
+                                        <span class="urank-title">US NEWS RANKING <span class="urank-stat">#003</span> </span>
+                                    </div>
                                     <h1 class="clg-high-text">Harvard University</h1>
                                     <h2 class="Avenir-Roman font-18 univ-location">Cambridge, Massachusetts</h2>
                                     <div class="univ-found">
@@ -387,25 +398,25 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="univ-info-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Acceptance rate</p>
+                                    <p class="univ-sub">Acceptance <br>rate</p>
                                     <span class="univ-count">57%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                                 <div class="univ-info-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Graduation rate</p>
+                                    <p class="univ-sub">Graduation<br> rate</p>
                                     <span class="univ-count">45%</span>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Average Tution fee</p>
+                                    <p class="univ-sub-bot">Average Tution fee</p><span class="orag-joy"></span>
                                     <h2>USD 35,000</h2>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-4 col-sm-6 col-xs-6">
                                 <div class="univ-info-alt-thumb Avenir-Heavy">
-                                    <p class="univ-sub">Preferred Entrance exams</p>
+                                    <p class="univ-sub-bot">Preferred Entrance exams</p><span class="orag-joy"></span>
                                     <h2 class="">GRE, GMAT, IELTS, T..</h2>
                                 </div>
                             </div>
@@ -579,7 +590,7 @@
         </div>
     </div>
     <div class="min-footer">
-        <div class="container">
+        <div class="container-fluid">
             <div class="min-foot-wrap  Avenir-Medium">
                 <p>© Hamzek Solutions Pvt .Ltd 2019, All rights reserved</p>
                 <div class="terms-wrap"><span><a href="file:///Users/gleecus-imac/Documents/stuzee-v2/terms.html"> Terms and conditions </a></span><span> Privacy policy</span>

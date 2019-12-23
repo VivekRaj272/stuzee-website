@@ -1,20 +1,5 @@
-Skip to content
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@VivekRaj272 
-1
-00VivekRaj272/stuzee-website
- Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
-stuzee-website/style.css
-@VivekRaj272 VivekRaj272 Home page UI
-e6e15f8 7 minutes ago
-2333 lines (1882 sloc)  36 KB
-  
+
 .services-title {
     color: #828282;
     width: 50%;
@@ -27,8 +12,8 @@ e6e15f8 7 minutes ago
 .consult-stat {
     display: block;
     background-color: #F7964F;
-    padding: 10px 20px;
-    margin: 5px -12px -5px -12px;
+    padding: 10px 21px;
+    margin: -21px -10px;
     border-radius: 0px 0px 15px 15px;
     color: #ffffff !important;
     text-align: left;
@@ -112,10 +97,14 @@ e6e15f8 7 minutes ago
 
 .clg-high-text {
     display: inline-block;
-    font-size: 34px;
+    font-size: 30px;
     color: #264678;
     font-weight: bold;
     font-family: 'Avenir-Black' !important;
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 .plug-screen {
@@ -173,7 +162,11 @@ e6e15f8 7 minutes ago
     font-family: 'Avenir-Medium' !important;
     position: absolute;
     bottom: 0;
-    width: 80%;
+    width: 100%;
+    right: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-right: -50%;
     text-align: center;
 }
 
@@ -256,7 +249,7 @@ e6e15f8 7 minutes ago
     color: #828282;
     margin-right: 20px;
     font-family: 'Avenir-Book';
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -301,7 +294,7 @@ e6e15f8 7 minutes ago
     width: 100%;
     border: 1px solid #293A80;
     border-right: none;
-    padding: 15px;
+    padding: 15px 40px;
     border-radius: 10px 0 0 10px;
     outline: none;
     background: rgba(255, 255, 255, 0.8);
@@ -347,7 +340,7 @@ e6e15f8 7 minutes ago
     width: 70%;
     position: absolute;
     top: 35%;
-    left: 45%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -763,7 +756,7 @@ img.discuss-img {
 .stuzee-thumb {
     border-radius: 15px;
     padding: 10px;
-    height: 315px;
+    height: 290px;
     text-align: center;
     margin: 50px 0px 100px 0px;
     background-color: #fff;
@@ -789,6 +782,7 @@ img.discuss-img {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    font-size: 18px;
 }
 
 .stu-head-wrap {
@@ -883,7 +877,7 @@ img.discuss-img {
     text-align: left;
     margin-top: 10px;
     min-height: 150px;
-    padding: 20px;
+    padding: 22px;
     border-bottom: 2px solid #F0EEFF;
 }
 
@@ -894,7 +888,14 @@ img.discuss-img {
     background-color: #ffffff;
     box-shadow: 0px 3px 12px #26467840;
     margin-bottom: 10px;
-    height: 560px;
+    height: 580px;
+    cursor: pointer;
+
+}
+
+.rank-wrap {
+    text-align: right;
+    margin-top: -20px;
 }
 
 .uni-btn-wrap {
@@ -1020,17 +1021,24 @@ img.discuss-img {
     height: auto;
     border: 2px solid #F7964F;
     border-radius: 10px;
+    margin: 20px;
 }
 
 .univ-info-thumb {
     padding: 10px;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
     min-height: 145px;
     max-height: 145px;
     align-items: center;
     display: grid;
     text-align: center;
+    background-position: center;
+    background-size: contain;
+    z-index: 20;
+    background-image: url(images/univ-circle.png);
+    background-repeat: no-repeat;
 }
 
 .univ-info-alt-thumb {
@@ -1042,6 +1050,16 @@ img.discuss-img {
     align-items: center;
     display: grid;
     text-align: center;
+    position: relative;
+}
+
+.orag-joy {
+    position: absolute;
+    width: 35px;
+    border: 2px solid #F7964F;
+    border-radius: 10px;
+    left: 10px;
+    top: 48px;
 }
 
 
@@ -1074,23 +1092,62 @@ img.discuss-img {
 .univ-info-alt-thumb h2 {
     color:#293A80;
     text-align: left;
+    z-index: 99;
+    font-family: 'Avenir-Black';
+    white-space: nowrap;
+    overflow: hidden;
+   text-overflow: ellipsis;
+
 }
 
 .univ-sub {
     color: #293A80;
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    text-overflow: ellipsis;
+    min-height: 55px;
+    margin-bottom: 0px;
+}
+
+
+.urank-title {
+    color: #293A80;
+    font-size: 16px;
+    font-family: 'Avenir-Medium';
+    background-color: #FBFBFB;
+    padding: 12px 0px 12px 12px;
+    border-radius: 50px;
+
+}
+
+
+.urank-stat {
+    background-color: #F7964F;
+    padding: 20px 10px;
+    border-radius: 50%;
+    font-size: 21px;
+    color: #fff;
+    font-family: 'Avenir-Black';
+    font-weight: bold;
+}
+
+.univ-sub-bot {
+    color: #293A80;
+    font-size: 22px;
     word-break: break-word;
     line-height: 28px;
     text-align: left;
     text-overflow: ellipsis;
-    height: 35px;   
+    height: 35px;
     margin-bottom: 0px;
+    font-family: 'Avenir-Medium';
 }
 
 .univ-count {
     color: #293A80;
-    font-size: 34px;
-    padding: 20px;
+    font-size: 40px;
+    height: auto;
 }
 
 .univ-info-thumb h2 {
@@ -1109,6 +1166,7 @@ img.discuss-img {
     font-family: 'Avenir-Black';
     font-size: 18px;
     color: #293A80;
+    margin-top: 16px;
 }
 
 .read-time {
@@ -1277,6 +1335,7 @@ img.discuss-img {
     display: flex;
     justify-content: center;
     float: left;
+    padding-left: 0px;
 }
 
 .social-widget-dir li a {
@@ -1296,7 +1355,7 @@ img.discuss-img {
 .brand-motto {
     color: #264678;
     width: 70%;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Avenir-Black';
 }
@@ -1311,7 +1370,7 @@ img.discuss-img {
     background-image: url(images/footer-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 30px 30px 140px;
+    padding: 50px 30px 30px 140px;
 }
 
 .stuzee-contents-list li a {
@@ -1698,11 +1757,18 @@ ul li img {
 .terms-wrap {
     white-space: pre-wrap;
     font-family: 'Avenir-Book';
-    color: #828282;
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 
+.terms-wrap a {
+    color: #FFFFFF !important;
+}
+
+
+.terms-wrap a:hover {
+    text-decoration: none;
+}
 /*override modal for demo only*/
 .modal-dialog {
     max-width: 500px;
@@ -1763,7 +1829,7 @@ ul li img {
 
 .section-products-cards {
     z-index: 1;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 
 }
 
@@ -1944,7 +2010,9 @@ ul li img {
 .we-info p {
     font-size: 24px;
     color: #828282;
+    font-family: 'Avenir-Book';
     margin-top: 25px;
+
 }
 
 .getstart-btn {
