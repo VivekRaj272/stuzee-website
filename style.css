@@ -1227,6 +1227,8 @@ img.discuss-img {
     color: #293A80;
     font-size: 40px;
     height: auto;
+    font-family: 'Avenir-Black';
+
 }
 
 .univ-info-thumb h2 {
@@ -1515,7 +1517,10 @@ span.grey-joy {
     font-size: 18px;
 }
 
-
+.underline {
+    text-decoration: underline;
+    font-family: 'Avenir-Black';
+}
 
 .stuzee-about {
     background-image: url(../images/bg.png);
