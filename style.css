@@ -374,7 +374,7 @@
     text-align: center;
     color: #000;
     border-radius: 0 10px 10px 0;
-    cursor: pointer;
+    cursor: pointer !important;
     font-size: 20px;
     position: absolute;
     outline: none !important;
@@ -829,18 +829,22 @@ img.discuss-img {
     border: 1px solid transparent;
 }
 
+.min-foot-wrap p {
+    margin-bottom: 0px;
+    margin-left: 25px;
+}
 
 .min-footer {
     width: 100%;
     background-color: #264678;
     color: #fff;
-    height: 60px;
+    max-height: 80px;
 }
 
 .min-foot-wrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding: 25px 100px 0px 100px;
     font-size: 18px;
 }
 
@@ -948,7 +952,7 @@ img.discuss-img {
     background-color: #ffffff;
     box-shadow: 0px 3px 12px #26467840;
     margin-bottom: 10px;
-    height: 580px;
+    height: 610px;
     cursor: pointer;
     margin: 15px 75px;
 
@@ -1117,10 +1121,10 @@ img.discuss-img {
 .orag-joy {
     position: absolute;
     width: 35px;
-    border: 2px solid #F7964F;
+    border-top: 4px solid #F7964F;
     border-radius: 10px;
-    left: 10px;
-    top: 48px;
+    left: 2px;
+    top: 0px;
 }
 
 
@@ -1159,6 +1163,9 @@ img.discuss-img {
     overflow: hidden;
    text-overflow: ellipsis;
    font-size: 30px;
+    position: relative;
+    padding-top: 12px;
+
 
 }
 
@@ -2266,6 +2273,7 @@ ul li img {
 
     .cont-btn {
         font-size: 18px;
+        padding: 
     }
 
     .openbtn {
@@ -2401,6 +2409,34 @@ ul li img {
         margin: 20px 0px;
     }
 
+    .stuzee-thumb {
+        margin: 75px 0px 0px 0px;
+    }
+
+    .clg-feature-info {
+        padding: 35px 15px;
+    }
+    .stuz-cont-bar {
+        margin-top: 85px;
+    }
+
+    .cont-bar-title {
+        margin-left: 0px;
+    }
+
+    .cont-btn-wrap {
+        margin: 0px;
+        text-align: center;
+        padding: 13px;
+    }
+
+    .university-block {
+        margin: 0px;
+    }
+
+    .brand-motto {
+        width: unset;
+    }
 }
 
 @media(max-width: 768px) {
