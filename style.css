@@ -257,7 +257,6 @@
 
 .navbar-right {
     font-size: 18px;
-    font-family: 'Avenir-Medium';
     font-weight: bold;
 }
 
@@ -1850,7 +1849,6 @@ ul li img {
 }
 
 .terms-wrap {
-    white-space: pre-wrap;
     font-family: 'Avenir-Book';
     font-size: 18px;
     text-align: justify;
@@ -1979,8 +1977,6 @@ ul li img {
 .divtext {
     margin: 36px;
 }
-
-
 
 .container.gallery-container {
     background-color: #fff;
