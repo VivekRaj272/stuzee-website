@@ -1,5 +1,3 @@
-
-
 // sidemenu
 .sidepanel {
     width: 0;
@@ -78,10 +76,18 @@
     color: #ffffff !important;
     text-align: left;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .consultancy-services {
     background-color: #F0EEFF;
+    margin: -20px;
+    margin-top: 40px;
+}
+
+
+.consult-stat span {
+    font-family: 'Avenir-Medium';
 }
 
 .mblmockup-wrap {
@@ -190,7 +196,7 @@
 }
 
 .five-high-text {
-     display: inline-block;
+    display: inline-block;
     font-size: 50px;
     color: #264678;
     font-weight: bold;
@@ -251,7 +257,8 @@
 
 .navbar-right {
     font-size: 18px;
-    font-family: 'Avenir-Black';
+    font-family: 'Avenir-Medium';
+    font-weight: bold;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -822,6 +829,7 @@ img.discuss-img {
     border: 1px solid transparent;
     cursor: pointer;
     max-width: 280px;
+    margin: 75px 50px;
 }
 
 .stuzee-thumb:hover {
@@ -838,13 +846,13 @@ img.discuss-img {
     width: 100%;
     background-color: #264678;
     color: #fff;
-    max-height: 80px;
+    max-height: 50px;
 }
 
 .min-foot-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 25px 100px 0px 100px;
+    padding: 10px 100px;
     font-size: 18px;
 }
 
@@ -1015,6 +1023,7 @@ img.discuss-img {
     letter-spacing: 1px;
     color: #264678;
     position: relative;
+    font-family: 'Avenir-Medium';
 }
 
 .all-article-btn:hover {
@@ -1143,7 +1152,7 @@ img.discuss-img {
 }
 
 
-.univ-scholor p span{
+.univ-scholor p span {
     color: #293A80;
     font-size: 20px;
     white-space: pre-wrap;
@@ -1155,14 +1164,14 @@ img.discuss-img {
 
 
 .univ-info-alt-thumb h2 {
-    color:#293A80;
+    color: #293A80;
     text-align: left;
     z-index: 99;
     font-family: 'Avenir-Black';
     white-space: nowrap;
     overflow: hidden;
-   text-overflow: ellipsis;
-   font-size: 30px;
+    text-overflow: ellipsis;
+    font-size: 30px;
     position: relative;
     padding-top: 12px;
 
@@ -1334,6 +1343,7 @@ img.discuss-img {
     margin-bottom: 0px !important;
     color: #264678;
     font-size: 22px;
+    font-family: 'Avenir-Heavy';
 }
 
 .art-ans {
@@ -1396,7 +1406,7 @@ img.discuss-img {
 
 .stuzee-contents-list {
     list-style: none;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .stuzee-footer-block {
@@ -1435,7 +1445,7 @@ img.discuss-img {
 
 .brand-motto {
     color: #264678;
-    width: 70%;
+    width: 92%;
     font-size: 22px;
     font-weight: bold;
     font-family: 'Avenir-Black';
@@ -1515,6 +1525,7 @@ span.grey-joy {
 .adrs-block-info {
     color: #264678;
     font-size: 18px;
+    margin-top: 85px;
 }
 
 .underline {
@@ -1853,6 +1864,7 @@ ul li img {
 .terms-wrap a:hover {
     text-decoration: none;
 }
+
 /*override modal for demo only*/
 .modal-dialog {
     max-width: 500px;
@@ -1943,9 +1955,6 @@ ul li img {
 .holder-title {
     width: 90%;
 }
-
-
-
 
 
 .lightboxcontainer {
@@ -2278,7 +2287,7 @@ ul li img {
 
     .cont-btn {
         font-size: 18px;
-        padding: 
+        padding:
     }
 
     .openbtn {
@@ -2408,6 +2417,7 @@ ul li img {
     .all-uni-btn {
         padding: 5px 15px !important;
         font-size: 14px;
+        font-family: 'Avenir-Medium';
     }
 
     .reg-service-btn {
@@ -2421,6 +2431,7 @@ ul li img {
     .clg-feature-info {
         padding: 35px 15px;
     }
+
     .stuz-cont-bar {
         margin-top: 85px;
     }
@@ -2436,18 +2447,21 @@ ul li img {
     }
 
     .university-block {
-        margin: 0px;
+        margin: 0px 0px 25px 0px;
+        height: auto !important;
     }
 
     .brand-motto {
         width: unset;
     }
+
+    .all-uni-btn img {
+        position: unset;
+    }
 }
 
 @media(max-width: 768px) {
-    body {
-        padding: 0;
-    }
+
 
     .container.gallery-container {
         border-radius: 0;
@@ -2503,7 +2517,6 @@ ul li img {
         margin-right: 15px;
     }
 
-
     .univ-info-thumb h2 {
         font-size: 20px;
     }
@@ -2542,9 +2555,4 @@ ul li img {
 
 }
 
-@media screen and (max-width:1500px) {
-    #ads {
-        display: none;
-    }
-}
-
+@media screen and (max-width:1500px) {}

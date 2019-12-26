@@ -1,11 +1,19 @@
-// variables
+/*variables*/
 
-// $stuzee-primary :#293A80 !important;
-// $stuzee-light : #F7964F !important;
-// $stuzee-title : #264678 !important;
+/* $stuzee-primary :#293A80 !important;
+ $stuzee-light : #F7964F !important;
+ $stuzee-title : #264678 !important;*/
 
-// font faces
 
+
+* { 
+ font-family: inherit;
+ line-height: inherit;
+ color: inherit;
+}
+
+
+/*font faces*/
 
 @font-face {
     font-family: 'Avenir-Heavy';
@@ -34,11 +42,6 @@
 
 
 
-// font-families
-
-// .Avenir {
-//     font-family: 'Avenir';
-// }
 
 .Avenir-Heavy {
     font-family: 'Avenir-Heavy';
@@ -62,7 +65,7 @@
 
 
 
-// colors
+/*colors*/
 
 .stuzee-primary {
     color: $stuzee-primary;
@@ -113,7 +116,7 @@
     color: #3d30a4 !important;
 }
 
-// font sizes
+ /*font sizes*/
 
 .font-10 {
     font-size: 10px !important;
@@ -195,7 +198,7 @@
     text-align: left !important;
 }
 
-// common css
+ /*common css*/
 
 html {
     scroll-behavior: smooth;
