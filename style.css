@@ -202,15 +202,19 @@
 /* abroad black style start*/
 
 .abroad-box {
-    background-image: url(images/plane-bg.png);
+    background: url('images/aeroplane-bg.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 980px !important;
     position: relative;
     font-family: 'Avenir-Heavy' !important;
     width: 100%;
     margin-top: 50px;
+}
+
+.studyimg-wrap {
+    text-align: center;
+    margin: 20px;
 }
 
 .abroad-msg {
@@ -248,7 +252,6 @@
     font-weight: bold;
     font-family: 'Avenir-Black' !important;
     margin-top: 20px;
-    /*white-space: nowrap;*/
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 0px;
@@ -302,19 +305,14 @@
     font-size: 20px;
     color: #ccc;
     font-family: 'Avenir-Medium' !important;
+    padding: 10px 0px;
 }
 
 .abroad-tag p {
     font-size: 23px;
     color: #828282;
     font-family: 'Avenir-Medium' !important;
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    right: 50%;
-    left: 50%;
-    margin-left: -50%;
-    margin-right: -50%;
     text-align: center;
 }
 
