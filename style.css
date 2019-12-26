@@ -397,12 +397,12 @@
     display: block;
     background-color: #F7964F;
     padding: 7px 21px;
-    margin: -15px -12px;
     border-radius: 0px 0px 15px 15px;
     color: #ffffff !important;
     text-align: left;
     font-size: 24px;
     font-weight: bold;
+    margin: -12px;
 }
 
 .consultancy-services {
@@ -458,6 +458,17 @@
     margin-top: 50px;
 }
 
+.univ-img-wrap {
+    width: 180px;
+    height: 180px;
+    background: url(images/campus-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 3px 4px #26467840;
+    border-radius: 10px;
+}
+
 .univ-location {
     color: #F7964F;
 }
@@ -495,7 +506,7 @@
     background-color: #ffffff;
     box-shadow: 0px 3px 12px #26467840;
     margin-bottom: 10px;
-    height: 610px;
+    height: 560px;
     cursor: pointer;
     margin: 15px 75px;
 }
@@ -546,16 +557,17 @@
 
 .univ-thumb-img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 2px solid #F7964F;
     border-radius: 10px;
     margin: 20px;
+    display: none;
 }
 
 .univ-info-thumb {
     padding: 10px;
     border-radius: 10px;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: 20px;
     min-height: 145px;
     max-height: 145px;
@@ -1032,20 +1044,21 @@ img.discuss-img {
 
 .stuzee-thumb {
     border-radius: 15px;
-    padding: 10px;
-    /*height: 290px;*/
     text-align: center;
-    margin: 50px 0px 100px 0px;
     background-color: #fff;
-    border: 1px solid transparent;
     cursor: pointer;
-    max-width: 280px;
-    margin: 50px;
+    max-width: 260px;
+    margin: 50px 20px;
+    padding: 12px;
+}
+
+.stu-thumb-wrap img {
+    width: 100%;
+    height: 100%;
 }
 
 .stuzee-thumb:hover {
     box-shadow: 0px 8px 15px #293A804D;
-    border: 1px solid transparent;
 }
 
 .min-foot-wrap p {
@@ -1117,10 +1130,15 @@ img.discuss-img {
 
 
 .stu-thumb-wrap {
-    width: auto;
+    width: 170px;
     padding: 10px;
     text-align: left;
     margin-top: 15px;
+}
+
+.thumb-cards-wrap {
+    display: flex;
+    justify-content: center;
 }
 
 .cont-bar-title {
@@ -1158,7 +1176,7 @@ img.discuss-img {
 .univ-info {
     text-align: left;
     margin-top: 10px;
-    min-height: 150px;
+    min-height: 170px;
     padding: 22px;
     border-bottom: 2px solid #F0EEFF;
     padding: 10px;
@@ -1167,6 +1185,7 @@ img.discuss-img {
 .rank-wrap {
     text-align: right;
     margin-top: -20px;
+    margin-right: -25px;
 }
 
 .uni-btn-wrap {
@@ -1216,7 +1235,7 @@ img.discuss-img {
 }
 
 .all-article-btn {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 1px;
     color: #264678;
     position: relative;
@@ -1322,12 +1341,12 @@ img.discuss-img {
 
 
 .clg-feature-info {
-    padding: 35px 0px;
+    padding: 25px 0px;
 }
 
 .feature-card {
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -1346,7 +1365,7 @@ img.discuss-img {
 }
 
 .feature-card:hover {
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .article-btn-wrap {
@@ -2315,7 +2334,7 @@ ul li img {
         margin-left: -13px;
     }
 
-    .univ-info-thumb h2 {
+    .info-thumb h2 {
         font-size: 20px;
     }
 
