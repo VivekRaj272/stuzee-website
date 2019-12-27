@@ -1655,7 +1655,6 @@ span.grey-joy {
 }
 
 #dir-slide {
-    background-color: #fafafa;
     padding: 35px 0px 50px;
     border-radius: 15px;
 }
@@ -1672,7 +1671,7 @@ span.grey-joy {
 
 .about-title {
     text-align: center;
-    margin-top:60px;
+    margin-top:20px;
 }
 
 .about-card {
@@ -2111,6 +2110,7 @@ ul li img {
 .team-header {
     color: #264678;
     font-size: 38px;
+    margin-bottom: 35px;
 }
 
 .team-hightxt {
@@ -2145,8 +2145,10 @@ ul li img {
 }
 
 .we-info h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: #293A80;
+    font-family: 'Avenir-Medium';
+
 }
 
 .we-info {
@@ -2154,7 +2156,7 @@ ul li img {
 }
 
 .we-info p {
-    font-size: 24px;
+    font-size: 20px;
     color: #828282;
     font-family: 'Avenir-Book';
     margin-top: 25px;
@@ -2182,6 +2184,7 @@ ul li img {
 .unihelp-text {
     font-family: 'Avenir-Medium';
     color: #293A80 !important;
+    margin-top: 35px;
 }
 
 .mission-info {
@@ -2207,13 +2210,18 @@ ul li img {
     font-family: 'Avenir-Book';
 }
 
+.mission-text p  {
+    font-size: 20px !important
+}
+
 .mission-text p span {
     color: #F0EEFF !important;
     margin-top: 30px;
+    font-size: 30px !important
 }
 
 .mission-text h2 {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .brand-bio {
