@@ -1,4 +1,29 @@
 
+
+
+
+@keyframes blink {
+    0% { box-shadow: 0 0 20px #F7964F;border-radius: 50%; }
+    50% { box-shadow: none;border-radius: 50%; }
+    100% { box-shadow: 0 0 20px #F7964F;border-radius: 50%; }
+}
+
+@-webkit-keyframes blink {
+    0% { box-shadow: 0 0 15px #F7964F;border-radius: 50%; }
+    50% { box-shadow: 0 0 0;border-radius: 50%; }
+    100% { box-shadow: 0 0 15px #F7964F;border-radius: 50%; }
+}
+
+.dots-wrap img {
+    -webkit-animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    -ms-animation: blink 1.5s linear infinite;
+    -o-animation: blink 1.5s linear infinite;
+    animation: blink 1.5s linear infinite;
+}
+
+
+
 /*home*/
 
 .stuzee-homewrap {
@@ -156,6 +181,7 @@
     font-size: 18px;
     color: #293A80 !important;
     height: 55px;
+    z-index: 999;
 }
 
 .searchTerm::placeholder {
@@ -195,7 +221,61 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
 }
+
+
+.dot-img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.dots-wrap span:nth-child(1) {
+    top: 39%;
+    left: 15%;
+    position: absolute;
+    z-index: 10;
+}
+
+.dots-wrap span:nth-child(2) {
+    top: 33%;
+    left: 21%;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.dots-wrap span:nth-child(3) {
+    top: 35%;
+    left: 49%;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.dots-wrap span:nth-child(4) {
+    bottom: 25%;
+    right: 13%;
+    position: absolute;
+    z-index: 10;
+}
+
+/*.dots-wrap span img:nth-child(2) {
+    top: 39%;
+    left: 25%;
+    position: absolute;
+}
+.dots-wrap img:nth-child(3) {
+    top: 39%;
+    left: 45%;
+    position: absolute;
+}
+.dots-wrap img:nth-child(4) {
+    top: 39%;
+    left: 55%;
+    position: absolute;
+}*/
 
 /*home css end*/
 
@@ -204,12 +284,13 @@
 .abroad-box {
     background: url('images/aeroplane-bg.png');
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     position: relative;
     font-family: 'Avenir-Heavy' !important;
     width: 100%;
     margin-top: 50px;
+    padding: 35px;
 }
 
 .studyimg-wrap {
@@ -309,7 +390,7 @@
 }
 
 .abroad-tag p {
-    font-size: 23px;
+    font-size: 22px;
     color: #828282;
     font-family: 'Avenir-Medium' !important;
     width: 100%;
