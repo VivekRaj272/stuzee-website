@@ -1,17 +1,35 @@
-
-
-
-
 @keyframes blink {
-    0% { box-shadow: 0 0 20px #F7964F;border-radius: 50%; }
-    50% { box-shadow: none;border-radius: 50%; }
-    100% { box-shadow: 0 0 20px #F7964F;border-radius: 50%; }
+    0% {
+        box-shadow: 0 0 20px #F7964F;
+        border-radius: 50%;
+    }
+
+    50% {
+        box-shadow: none;
+        border-radius: 50%;
+    }
+
+    100% {
+        box-shadow: 0 0 20px #F7964F;
+        border-radius: 50%;
+    }
 }
 
 @-webkit-keyframes blink {
-    0% { box-shadow: 0 0 15px #F7964F;border-radius: 50%; }
-    50% { box-shadow: 0 0 0;border-radius: 50%; }
-    100% { box-shadow: 0 0 15px #F7964F;border-radius: 50%; }
+    0% {
+        box-shadow: 0 0 15px #F7964F;
+        border-radius: 50%;
+    }
+
+    50% {
+        box-shadow: 0 0 0;
+        border-radius: 50%;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #F7964F;
+        border-radius: 50%;
+    }
 }
 
 .dots-wrap img {
@@ -62,7 +80,7 @@
 }
 
 .dropdown-menu a:nth-child(6) {
-    border:none !important;
+    border: none !important;
 }
 
 
@@ -314,6 +332,10 @@
 .studyimg-wrap {
     text-align: center;
     margin: 20px;
+}
+
+.studyimg-wrap img {
+    max-width: 100%;
 }
 
 .abroad-msg {
@@ -1083,7 +1105,7 @@ img.discuss-img {
 .sidepanel {
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     height: 100vh;
     top: 0;
     right: 0;
@@ -1105,8 +1127,8 @@ img.discuss-img {
     white-space: nowrap;
 }
 
-.sidepanel a:hover {
-    color: #93b2f9;
+.sidepanel a:active {
+    color: #F7964F;
 }
 
 .sidepanel .closebtn {
@@ -1117,7 +1139,7 @@ img.discuss-img {
     outline: none !important;
 }
 
-.openbtn {
+/*.openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color: #262261;
@@ -1132,11 +1154,10 @@ img.discuss-img {
     margin: 20px;
     display: none;
     font-size: 30px;
-}
+}*/
 
 .openbtn:hover {
-    background-color: #444;
-    color: #ccc;
+    background-color: #fff;
 }
 
 .stuzee-thumb {
@@ -1145,8 +1166,8 @@ img.discuss-img {
     background-color: #fff;
     cursor: pointer;
     max-width: 260px;
-    margin: 50px 20px;
-    padding: 12px;
+    margin: 50px 10px;
+    padding: 10px;
 }
 
 .stu-thumb-wrap img {
@@ -1167,13 +1188,13 @@ img.discuss-img {
     width: 100%;
     background-color: #264678;
     color: #fff;
-    max-height: 50px;
+    /*max-height: 50px;*/
 }
 
 .min-foot-wrap {
     display: flex;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 10px;
     font-size: 18px;
 }
 
@@ -1453,6 +1474,7 @@ img.discuss-img {
     color: #264678;
     font-size: 22px;
     font-family: 'Avenir-Heavy';
+    padding: 10px 0px;
 }
 
 .art-ans {
@@ -1623,6 +1645,7 @@ span.grey-joy {
     bottom: 0px;
 }
 
+
 .foot-sub {
     color: #F7964F;
     display: block;
@@ -1639,7 +1662,7 @@ span.grey-joy {
 .underline {
     text-decoration: underline;
     font-family: 'Avenir-Black';
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
@@ -1671,7 +1694,7 @@ span.grey-joy {
 
 .about-title {
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .about-card {
@@ -1954,7 +1977,6 @@ ul li img {
 .terms-wrap {
     font-family: 'Avenir-Book';
     font-size: 18px;
-    text-align: justify;
 }
 
 .terms-wrap a {
@@ -2210,7 +2232,7 @@ ul li img {
     font-family: 'Avenir-Book';
 }
 
-.mission-text p  {
+.mission-text p {
     font-size: 20px !important
 }
 
@@ -2244,7 +2266,7 @@ ul li img {
 .feat-load-info {
     font-family: 'Avenir-Book';
     font-size: 24px;
-    color: #FBFBFB;
+    color: #828282;
 }
 
 .five-load-info {
@@ -2322,8 +2344,8 @@ ul li img {
     height: 100%;
 }
 
-/* sidemenu */
 
+// sidemenu
 .sidepanel {
     width: 0;
     position: fixed;
@@ -2364,8 +2386,8 @@ ul li img {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #262261;
-    color: white;
+    background-color: #ffffff;
+    color: #262261;
     padding: 0px 10px;
     border: none;
     border-radius: 5px;
@@ -2373,37 +2395,114 @@ ul li img {
     top: 0;
     right: 0px;
     outline: none !important;
-    margin: 20px;
+    margin: 20px 0px;
     display: none;
     font-size: 30px;
 }
 
-.openbtn:hover {
-    background-color: #444;
+/*.openbtn:hover {
+    background-color: #000;
 }
-
-
+*/
 /*media queries*/
 
 
 @media (min-width: 320px) and (max-width: 767px) {
+
+    html {
+        overflow: auto !important;
+    }
 
     body {
         display: contents;
         overflow: auto !important;
     }
 
+    #demo {
+        display: none;
+    }
+
+    .grey-joy {
+        left: 45% !important;
+        position: absolute;
+    }
+
+    .dots-wrap {
+        display: none;
+    }
+
+    .abroad-box {
+        margin-top: 0px;
+        padding: 15px;
+    }
+
+    .abroad-msg h1 {
+        font-size: 18px !important;
+    }
+
     .abroad-msg span {
         display: block;
-        font-size: 30px !important;
+        font-size: 18px !important;
         color: #264678;
         font-weight: bold;
-        line-height: 35px;
+        line-height: 24px;
+    }
+
+    .stuzee-brand-block {
+        margin: -15px;
+        padding: 30px;
+    }
+
+    .feature-header {
+        font-size: 28px;
+    }
+
+    .stuz-cont-bar {
+        border-radius: 15px;
+    }
+
+    .wrap {
+        width: 80%;
+        position: absolute;
+        left: 40%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+        top: unset;
+    }
+
+    .consultancy-services {
+        margin: -30px;
+    }
+
+    .stu-head-wrap {
+        padding: 20px;
     }
 
     .home-btn-group {
         display: none;
     }
+
+    .terms-wrap span {
+        display: block;
+        margin: 20px 0px;
+    }
+
+    .min-foot-wrap p {
+        margin-left: 0px;
+        font-size: 18px;
+    }
+
+    .adrs-block-info {
+        margin-top: 0px;
+    }
+
+    .min-foot-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
 
     .stuzee-footer {
         margin-top: 50px;
@@ -2412,7 +2511,6 @@ ul li img {
 
     .cont-btn {
         font-size: 18px;
-        padding:
     }
 
     .openbtn {
@@ -2443,7 +2541,12 @@ ul li img {
     }
 
     .stuzee-homewrap {
-        height: 475px !important;
+        height: 350px !important;
+        background-size: contain;
+    }
+
+    .search {
+        margin-top: 0px !important;
     }
 
     .home-mock-wrap {
@@ -2468,7 +2571,7 @@ ul li img {
 
     .cont-bar-title {
         padding: 18px;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .stuz-cont-bar {
@@ -2513,6 +2616,31 @@ ul li img {
         padding: 8px;
     }
 
+    .section-products-cards {
+        padding: 15px 50px;
+    }
+
+    .all-article-btn img {
+        position: static;
+    }
+
+    .abroad-tag p {
+        font-size: 14px;
+    }
+
+    .stuzee-info {
+        font-size: 18px !important;
+    }
+
+    .abroad-msg {
+        margin-top: 0px;
+    }
+
+    .apps-tag p {
+        font-size: 15px;
+        padding-bottom: 20px !important;
+    }
+
     .carousel-control-next-icon {
         height: 40px !important;
         width: unset !important;
@@ -2526,6 +2654,7 @@ ul li img {
     .stuzee-contents-list {
         list-style: none;
         margin-top: 20px;
+        padding-left: 0px;
     }
 
     .stuzee-footer-block {
@@ -2550,16 +2679,16 @@ ul li img {
     }
 
     .stuzee-thumb {
-        margin: 75px 0px 0px 0px;
+        margin: 20px;
     }
 
     .clg-feature-info {
         padding: 35px 15px;
     }
 
-    .stuz-cont-bar {
+    /*   .stuz-cont-bar {
         margin-top: 85px;
-    }
+    }*/
 
     .cont-bar-title {
         margin-left: 0px;
@@ -2587,6 +2716,14 @@ ul li img {
 
 @media(max-width: 768px) {
 
+    html {
+        overflow: auto !important;
+    }
+
+    body {
+        display: contents;
+        overflow: auto !important;
+    }
 
     .container.gallery-container {
         border-radius: 0;
@@ -2623,9 +2760,27 @@ ul li img {
     .divtext {
         margin: 12px;
     }
+
+    html {
+        overflow: auto !important;
+    }
+
+    body {
+        display: contents;
+        overflow: auto !important;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    html {
+        overflow: auto !important;
+    }
+
+    body {
+        display: contents;
+        overflow: auto !important;
+    }
 
     .modal-dialog {
         width: 500px;
@@ -2681,10 +2836,4 @@ ul li img {
 
 }
 
-@media screen and (max-width:1500px) {
-
-
-
-
-
-}
+@media screen and (max-width:1500px) {}

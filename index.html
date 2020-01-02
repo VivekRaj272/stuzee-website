@@ -43,6 +43,28 @@
                         </li>
                     </ul>
                 </div>
+                <div class="sidepanel Avenir-Medium" id="stuzeeMblmenu">
+                    <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&#xD7;</a>
+                    <a href="#">Home</a>
+                    <a href="#">Areas of study</a>
+                    <a href="#">Universities</a>
+                    <a href="#">Scholarships</a>
+                    <a href="#">Exams</a>
+                    <a href="#">Articles</a>
+                    <a href="#">Discussions</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">&#x2630;</button>
+
+
+                <script>
+                    function openNav() {
+                    document.getElementById("stuzeeMblmenu").style.width = "250px";
+                    }
+                    function closeNav() {
+                    document.getElementById("stuzeeMblmenu").style.width = "0";
+                    }
+
+</script>
             </nav>
             <div class="wrap">
                 <div class="search">
@@ -584,7 +606,7 @@
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
                 <div class="adrs-block-info">
-                    <p class="brand-adrs black">
+                    <p>
                         <h2 class="foot-head">Meet us<span class="grey-joy"></span> </h2>
                         <span class="foot-sub">Address</span>
                         Hamzek Pvt.Ltd,
