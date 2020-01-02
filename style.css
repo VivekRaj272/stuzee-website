@@ -1595,6 +1595,14 @@ img.discuss-img {
     padding: 50px 30px 30px 140px;
 }
 
+.stuzee-brand-block-alt {
+    background-image: url(images/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 30px 30px 140px;
+    display: none;
+}
+
 .stuzee-contents-list li a {
     color: #264678;
     text-decoration: none;
@@ -2437,12 +2445,12 @@ ul li img {
     }
 
     .abroad-msg h1 {
-        font-size: 18px !important;
+        font-size: 22px !important;
     }
 
     .abroad-msg span {
         display: block;
-        font-size: 18px !important;
+        font-size: 22px !important;
         color: #264678;
         font-weight: bold;
         line-height: 24px;
@@ -2451,6 +2459,12 @@ ul li img {
     .stuzee-brand-block {
         margin: -15px;
         padding: 30px;
+        display: none;
+    }
+
+    .stuzee-brand-block-alt {
+        padding: 45px 0px 5px 7px;
+        display: block;
     }
 
     .feature-header {
@@ -2459,6 +2473,10 @@ ul li img {
 
     .stuz-cont-bar {
         border-radius: 15px;
+    }
+
+    .feature-card {
+        border: 1px solid #ccc;
     }
 
     .wrap {
@@ -2485,12 +2503,14 @@ ul li img {
 
     .terms-wrap span {
         display: block;
-        margin: 20px 0px;
+        margin-bottom: 0px;
+        font-size: 16px;
+        margin-right: 0px;
     }
 
     .min-foot-wrap p {
         margin-left: 0px;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .adrs-block-info {
@@ -2625,7 +2645,7 @@ ul li img {
     }
 
     .abroad-tag p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .stuzee-info {
@@ -2683,7 +2703,7 @@ ul li img {
     }
 
     .clg-feature-info {
-        padding: 35px 15px;
+        padding: 30px;
     }
 
     /*   .stuz-cont-bar {
