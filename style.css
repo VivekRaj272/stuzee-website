@@ -1981,11 +1981,18 @@ ul li img {
     padding-right: .5rem;
     color: #6c757d;
     content: ">";
+    display: none;
 }
 
 .breadcrumb-item+.breadcrumb-item {
     font-family: 'Avenir-Medium';
 
+}
+
+.bread-arw {
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: 2px;
 }
 
 .terms-wrap {
@@ -2169,6 +2176,7 @@ ul li img {
 
 .bread-slice {
     color: #293A80;
+    margin-left: 5px;
 }
 
 .weimg-wrap {
