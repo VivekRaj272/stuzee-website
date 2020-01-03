@@ -1336,7 +1336,6 @@ img.discuss-img {
     font-weight: bold;
     background-color: #fff !important;
     outline: none !important;
-    font-size: 22px;
     padding: 10px 30px;
 }
 
@@ -2760,7 +2759,7 @@ ul li img {
     }
 
     .stuzee-thumb {
-        margin: 20px;
+        margin: 20px 30px;
     }
 
     .clg-feature-info {
