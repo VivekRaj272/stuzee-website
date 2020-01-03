@@ -2439,10 +2439,9 @@ ul li img {
 
 .side-credits {
     font-family: 'Avenir-Medium';
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     bottom: 0px;
-    padding: 5px;
     text-align: center;
 }
 
