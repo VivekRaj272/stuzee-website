@@ -1122,7 +1122,7 @@ img.discuss-img {
 .sidepanel a {
     padding: 8px 8px 8px 30px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     color: #212529;
     display: block;
     transition: 0.3s;
@@ -1983,6 +1983,11 @@ ul li img {
     content: ">";
 }
 
+.breadcrumb-item+.breadcrumb-item {
+    font-family: 'Avenir-Medium';
+
+}
+
 .terms-wrap {
     font-family: 'Avenir-Book';
     font-size: 18px;
@@ -2432,6 +2437,15 @@ ul li img {
     display: none;
 }
 
+.side-credits {
+    font-family: 'Avenir-Medium';
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
 /*.openbtn:hover {
     background-color: #000;
 }
@@ -2796,6 +2810,7 @@ ul li img {
         font-size: 30px;
         line-height: 36px;
         margin: 0px;
+        padding: 20px 0px 0px 20px;
     }
 
     .input-wrap {
@@ -2837,6 +2852,7 @@ ul li img {
 
     .feat-load-info {
         font-size: 18px;
+        padding: 20px;
     }
 
     .load-feat-wrap {
