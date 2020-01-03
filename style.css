@@ -1166,7 +1166,7 @@ img.discuss-img {
     text-align: center;
     background-color: #fff;
     cursor: pointer;
-    max-width: 260px;
+    max-width: 275px;
     margin: 50px 10px;
     padding: 10px;
 }
@@ -2278,6 +2278,18 @@ ul li img {
     color: #FBFBFB;
 }
 
+.feat-load-info {
+    font-family: 'Avenir-Book';
+    font-size: 24px;
+    color: #FBFBFB;
+}
+
+.four-load-info {
+    font-family: 'Avenir-Book';
+    font-size: 24px;
+    color: #828282;
+}
+
 .five-load-info {
     color: #FBFBFB;
     font-size: 40px;
@@ -2421,9 +2433,9 @@ ul li img {
     font-size: 30px;
 }
 
- .loading-wrap-alt {
+.loading-wrap-alt {
     display: none;
- }
+}
 
 /*.openbtn:hover {
     background-color: #000;
@@ -2850,6 +2862,11 @@ ul li img {
         margin: 10px 0px;
     }
 
+    .card-img-wrap {
+        text-align: center;
+    }
+
+
 
 
 }
@@ -2887,8 +2904,8 @@ ul li img {
     }
 
     .feat-load-info {
-        font-size: 20px; 
-        color: #FBFBFB;   
+        font-size: 20px;
+        color: #FBFBFB;
     }
 }
 
@@ -2909,7 +2926,7 @@ ul li img {
         overflow: auto !important;
     }
 
- 
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
