@@ -1118,7 +1118,7 @@ img.discuss-img {
 }
 
 .sidepanel a {
-    padding: 8px 8px 8px 0px;
+    padding: 8px 8px 8px 30px;
     text-decoration: none;
     font-size: 22px;
     color: #212529;
@@ -1669,7 +1669,7 @@ span.grey-joy {
 
 .underline {
     text-decoration: underline;
-    font-family: 'Avenir-Black';
+    font-family: 'Avenir-Medium';
     cursor: pointer;
 }
 
@@ -2177,7 +2177,7 @@ ul li img {
 .we-info h2 {
     font-size: 35px;
     color: #293A80;
-    font-family: 'Avenir-Medium';
+    font-family: 'Avenir-Black';
 
 }
 
@@ -2219,7 +2219,7 @@ ul li img {
 
 .mission-info {
     background: url(images/mission-mockup.png);
-    height: 525px;
+    /*height: 525px;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2235,7 +2235,7 @@ ul li img {
     line-height: 35px;
     margin-top: 50px;
     word-break: break-word;
-    position: absolute;
+    /*position: absolute;*/
     padding: 20px;
     font-family: 'Avenir-Book';
 }
@@ -2274,7 +2274,7 @@ ul li img {
 .feat-load-info {
     font-family: 'Avenir-Book';
     font-size: 24px;
-    color: #828282;
+    color: #FBFBFB;
 }
 
 .five-load-info {
@@ -2295,7 +2295,6 @@ ul li img {
 }
 
 .load-screen {
-    margin-top: 100px;
     padding: 20px;
 }
 
@@ -2312,7 +2311,7 @@ ul li img {
 
 .input-wrap {
     position: relative;
-    width: 70%;
+    width: 90%;
 }
 
 .input-wrap span {
@@ -2347,6 +2346,19 @@ ul li img {
     height: auto;
 }
 
+.loading-wrap-alt {
+    padding: 25px;
+    text-align: left;
+    max-width: 600px;
+    height: auto;
+}
+
+
+.loading-wrap-alt img {
+    width: 100%;
+    height: 100%;
+}
+
 .loading-wrap img {
     width: 100%;
     height: 100%;
@@ -2370,7 +2382,7 @@ ul li img {
 }
 
 .sidepanel a {
-    padding: 8px 8px 8px 0px;
+    padding: 8px 8px 8px 30px;
     text-decoration: none;
     font-size: 22px;
     color: #212529;
@@ -2396,7 +2408,7 @@ ul li img {
     cursor: pointer;
     background-color: #ffffff;
     color: #262261;
-    padding: 0px 10px;
+    padding: 0px 20px;
     border: none;
     border-radius: 5px;
     position: absolute;
@@ -2407,6 +2419,10 @@ ul li img {
     display: none;
     font-size: 30px;
 }
+
+ .loading-wrap-alt {
+    display: none;
+ }
 
 /*.openbtn:hover {
     background-color: #000;
@@ -2456,6 +2472,17 @@ ul li img {
         line-height: 24px;
     }
 
+    .terms-wrap {
+        font-family: 'Avenir-Book';
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .stu-bios {
+        margin-top: 0px;
+    }
+
     .stuzee-brand-block {
         margin: -15px;
         padding: 30px;
@@ -2489,12 +2516,22 @@ ul li img {
         top: unset;
     }
 
+    .getstart-btn {
+        padding: 7px 35px;
+    }
+
     .consultancy-services {
         margin: -30px;
     }
 
     .stu-head-wrap {
         padding: 20px;
+    }
+
+    .weimg-wrap img {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
     }
 
     .home-btn-group {
@@ -2509,12 +2546,18 @@ ul li img {
     }
 
     .min-foot-wrap p {
-        margin-left: 0px;
-        font-size: 16px;
+        font-size: 15px;
+        margin-top: 12px;
+        padding: 2px;
     }
 
     .adrs-block-info {
         margin-top: 0px;
+    }
+
+    .we-info {
+        padding: 20px;
+        text-align: center;
     }
 
     .min-foot-wrap {
@@ -2522,15 +2565,25 @@ ul li img {
         flex-direction: column-reverse;
     }
 
+    .mission-text {
+        width: 100%;
+    }
 
+    .mission-text p span {
+        font-size: 24px !important;
+    }
 
     .stuzee-footer {
-        margin-top: 50px;
+        margin-top: 0px;
         text-align: center;
     }
 
     .cont-btn {
         font-size: 18px;
+    }
+
+    .brand-adrs {
+        margin-top: 0px;
     }
 
     .openbtn {
@@ -2633,7 +2686,7 @@ ul li img {
     }
 
     .searchTerm {
-        padding: 8px;
+        padding: 5px;
     }
 
     .section-products-cards {
@@ -2732,6 +2785,77 @@ ul li img {
     .all-uni-btn img {
         position: unset;
     }
+
+    .load-screen {
+        margin-top: 0px;
+    }
+
+    .load-high-text {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 0px;
+    }
+
+    .input-wrap {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .input-wrap button {
+        border: none;
+        background-color: #F7964F;
+        padding: 10px 25px;
+        border-radius: 35px;
+        color: #ffffff;
+        outline: none !important;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .input-wrap span {
+        position: static;
+    }
+
+    .backhome-btn {
+        margin: 15px auto;
+    }
+
+    .loading-wrap {
+        display: none;
+    }
+
+    .loading-wrap-alt {
+        display: block;
+    }
+
+    .load-screen {
+        padding: 0px;
+    }
+
+    .feat-load-info {
+        font-size: 18px;
+    }
+
+    .load-feat-wrap {
+        padding: 0px;
+    }
+
+    .five-high-text {
+        font-size: 32PX;
+    }
+
+    .five-load-info {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .five-high-text {
+        margin: 10px 0px;
+    }
+
+
+
 }
 
 @media(max-width: 768px) {
@@ -2765,6 +2889,15 @@ ul li img {
 
     .univ-sub-bot {
         height: 90px;
+    }
+
+    .load-high-text {
+        font-size: 36px;
+    }
+
+    .feat-load-info {
+        font-size: 20px; 
+        color: #FBFBFB;   
     }
 }
 
