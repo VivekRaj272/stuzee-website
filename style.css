@@ -1986,6 +1986,7 @@ ul li img {
 .terms-wrap {
     font-family: 'Avenir-Book';
     font-size: 18px;
+    white-space: nowrap;
 }
 
 .terms-wrap a {
