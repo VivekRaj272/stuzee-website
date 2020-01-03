@@ -510,6 +510,7 @@
     word-break: unset;
     font-family: 'Avenir-Black' !important;
     padding: 15px;
+    font-size: 24px;
 }
 
 .consult-stat {
@@ -1118,7 +1119,7 @@ img.discuss-img {
 }
 
 .sidepanel a {
-    padding: 8px 8px 8px 30px;
+    padding: 8px 8px 8px 0px;
     text-decoration: none;
     font-size: 22px;
     color: #212529;
@@ -2382,7 +2383,7 @@ ul li img {
 }
 
 .sidepanel a {
-    padding: 8px 8px 8px 30px;
+    padding: 8px 8px 8px 0px;
     text-decoration: none;
     font-size: 22px;
     color: #212529;
@@ -2434,11 +2435,6 @@ ul li img {
 @media (min-width: 320px) and (max-width: 767px) {
 
     html {
-        overflow: auto !important;
-    }
-
-    body {
-        display: contents;
         overflow: auto !important;
     }
 
@@ -2864,11 +2860,6 @@ ul li img {
         overflow: auto !important;
     }
 
-    body {
-        display: contents;
-        overflow: auto !important;
-    }
-
     .container.gallery-container {
         border-radius: 0;
     }
@@ -2918,10 +2909,7 @@ ul li img {
         overflow: auto !important;
     }
 
-    body {
-        display: contents;
-        overflow: auto !important;
-    }
+ 
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -2930,10 +2918,6 @@ ul li img {
         overflow: auto !important;
     }
 
-    body {
-        display: contents;
-        overflow: auto !important;
-    }
 
     .modal-dialog {
         width: 500px;
