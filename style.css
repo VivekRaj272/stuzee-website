@@ -590,6 +590,17 @@
     border-radius: 10px;
 }
 
+.univ-img-wrap-mbl {
+    width: auto;
+    height: 180px;
+    background: url(images/campus-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 3px 4px #26467840;
+    border-radius: 10px;
+}
+
 .univ-location {
     color: #F7964F;
 }
@@ -1298,7 +1309,7 @@ img.discuss-img {
     margin-top: 10px;
     min-height: 170px;
     padding: 22px;
-    border-bottom: 2px solid #F0EEFF;
+    /*border-bottom: 2px solid #F0EEFF;*/
     padding: 10px;
 }
 
@@ -1306,6 +1317,43 @@ img.discuss-img {
     text-align: right;
     margin-top: -20px;
     margin-right: -25px;
+}
+
+.urank-stat-mbl {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 21px;
+    color: #F7964F;
+    font-family: 'Avenir-Black';
+    font-weight: bold;
+}
+
+.univ-fund-mbl {
+    font-size: 18px;
+    font-family: 'Avenir-Medium';
+    color: #264678;
+    padding: 10px;
+    line-height: 26px;
+}
+
+.schlr-text {
+    font-size: 18px;
+    font-family: 'Avenir-Black';
+    color: #F7964F;
+}
+
+.univ-stat-row {
+    display: none;
+}
+
+.univ-found-mbl span {
+    font-size: 12px;
+}
+
+.univ-info-mbl {
+    display: flex;
+    justify-content: space-between;
 }
 
 .uni-btn-wrap {
@@ -2466,9 +2514,58 @@ ul li img {
         overflow: auto !important;
     }
 
-    #demo {
+    .univ-stat-row {
         display: none;
     }
+
+    .univ-img-wrap {
+        width: 60px;
+        height: 60px;
+    }
+
+    .univ-img-wrap-mbl {
+        width: 70px;
+        height: 68px;
+        padding: 20px;
+
+    }
+
+    .clg-high-text {
+        font-size: 14px;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+
+    .univ-mbl-loc {
+        color: #F7964F;
+        font-family: 'Avenir-Medium';
+    }
+
+    .univ-sub-bot {
+        font-size: 14px;
+    }
+
+    .univ-info-alt-thumb h2 {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+
+    .univ-info-alt-thumb {
+        margin-top: unset;
+        min-height: unset;
+    }
+
+    .univ-location {
+        font-size: 12px;
+    }
+
+    .rank-wrap-mbl {
+        text-align: unset;
+        margin: 0px;
+    }
+
+
+
 
     .grey-joy {
         left: 45% !important;
@@ -2493,7 +2590,7 @@ ul li img {
         font-size: 22px !important;
         color: #264678;
         font-weight: bold;
-        line-height: 24px;
+        line-height: 28px;
     }
 
     .terms-wrap {
@@ -2722,7 +2819,7 @@ ul li img {
     }
 
     .abroad-tag p {
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .stuzee-info {
@@ -2862,6 +2959,15 @@ ul li img {
         padding: 20px;
     }
 
+    .feat-load-infoalt {
+        font-size: 18px;
+        padding: 0px 20px;
+        margin-bottom: 0px;
+        color: #828282;
+    }
+
+
+
     .load-feat-wrap {
         padding: 0px;
     }
@@ -2883,6 +2989,11 @@ ul li img {
         text-align: left;
     }
 
+    .searchTerm {
+        text-align: center;
+        font-size: 16px;
+    }
+
 
 }
 
@@ -2891,6 +3002,11 @@ ul li img {
 
     html {
         overflow: auto !important;
+    }
+
+    .searchTerm {
+        text-align: center;
+        font-size: 16px;
     }
 
 
@@ -2999,7 +3115,8 @@ ul li img {
     .stuzee-brand-block-alt {
         display: block;
     }
-    .brand-motto{
+
+    .brand-motto {
         width: 80%;
     }
 
