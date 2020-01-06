@@ -2619,6 +2619,11 @@ ul li img {
         display: none;
     }
 
+    .plug-screen {
+        background-size: contain;
+        background-color: #517ec4;
+    }
+
     .univ-stat-row {
         display: none;
     }
@@ -2639,11 +2644,14 @@ ul li img {
         font-size: 14px;
         padding: 0px 10px;
         margin-top: 10px;
+
     }
 
     .univ-mbl-loc {
         color: #F7964F;
         font-family: 'Avenir-Medium';
+        margin: 5px 0px;
+        display: block;
     }
 
     .univ-sub-bot {
