@@ -590,17 +590,6 @@
     border-radius: 10px;
 }
 
-.univ-img-wrap-mbl {
-    width: auto;
-    height: 180px;
-    background: url(images/campus-img.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0px 3px 4px #26467840;
-    border-radius: 10px;
-}
-
 .univ-location {
     color: #F7964F;
 }
@@ -612,7 +601,11 @@
 }
 
 
-#demo {
+#web-stu-carousal {
+    padding: 20px;
+}
+
+#mbl-stu-carousal {
     padding: 20px;
 }
 
@@ -823,6 +816,8 @@
     margin-bottom: 0px;
     font-family: 'Avenir-Medium';
 }
+
+
 
 .univ-count {
     color: #293A80;
@@ -1329,19 +1324,7 @@ img.discuss-img {
     font-weight: bold;
 }
 
-.univ-fund-mbl {
-    font-size: 18px;
-    font-family: 'Avenir-Medium';
-    color: #264678;
-    padding: 10px;
-    line-height: 26px;
-}
 
-.schlr-text {
-    font-size: 18px;
-    font-family: 'Avenir-Black';
-    color: #F7964F;
-}
 
 .univ-stat-row {
     display: none;
@@ -1351,10 +1334,6 @@ img.discuss-img {
     font-size: 12px;
 }
 
-.univ-info-mbl {
-    display: flex;
-    justify-content: space-between;
-}
 
 .uni-btn-wrap {
     text-align: right;
@@ -1707,7 +1686,7 @@ span.grey-joy {
     color: #F7964F;
     display: block;
     margin-top: 25px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .adrs-block-info {
@@ -2058,7 +2037,8 @@ ul li img {
     text-decoration: none;
 }
 
-/*override modal for demo only*/
+/*override modal for 
+ only*/
 .modal-dialog {
     max-width: 500px;
 }
@@ -2508,10 +2488,135 @@ ul li img {
 /*media queries*/
 
 
+.university-block-mbl {
+    padding: 35px;
+    border-radius: 30px;
+    margin-top: 35px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 12px #26467840;
+    margin-bottom: 10px;
+    height: 560px;
+    cursor: pointer;
+    margin: 15px 75px;
+}
+
+.urank-title-mbl {
+    color: #293A80;
+    font-size: 16px;
+    background-color: #FBFBFB;
+    padding: 12px 0px 12px 12px;
+    border-radius: 50px;
+    font-family: 'Avenir-Medium';
+}
+
+.univ-info-mbl {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.univ-img-wrap-mbl {
+    width: auto;
+    height: 180px;
+    background: url(images/campus-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 3px 4px #26467840;
+    border-radius: 10px;
+}
+
+.clg-high-text-mbl {
+    display: inline-block;
+    font-size: 30px;
+    color: #264678;
+    font-weight: bold;
+    font-family: 'Avenir-Black' !important;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+}
+
+
+.univ-info-alt-thumb-mbl {
+    margin: 15px;
+}
+
+.univ-fund-mbl {
+    font-size: 18px;
+    font-family: 'Avenir-Medium';
+    color: #264678;
+    padding: 10px;
+    line-height: 26px;
+    margin-bottom: 0px;
+}
+
+
+.schlr-text {
+    font-size: 18px;
+    font-family: 'Avenir-Black';
+    color: #F7964F;
+}
+
+.urank-title-mbl {
+    font-size: 14px;
+}
+
+
+.univ-info-alt-thumb-mbl h2 {
+    color: #293A80;
+    text-align: left;
+    z-index: 99;
+    font-family: 'Avenir-Black';
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    position: relative;
+    padding-top: 12px;
+}
+
+
+.unicard-wrap-mbl {
+    text-align: center;
+}
+
+
+.univ-sub-bot-mbl {
+    color: #293A80;
+    font-size: 14px;
+    word-break: break-word;
+    line-height: 28px;
+    text-align: left;
+    text-overflow: ellipsis;
+    height: 30px;
+    margin-bottom: 0px;
+    font-family: 'Avenir-Medium';
+}
+
+#web-stu-carousal {
+    display: block;
+}
+
+#mbl-stu-carousal {
+    display: none;
+}
+
+
+
 @media (min-width: 320px) and (max-width: 767px) {
 
     html {
         overflow: auto !important;
+    }
+
+    #mbl-stu-carousal {
+        display: block;
+    }
+
+    #web-stu-carousal {
+        display: none;
     }
 
     .univ-stat-row {
@@ -2552,7 +2657,7 @@ ul li img {
 
     .univ-info-alt-thumb {
         margin-top: unset;
-        min-height: unset;
+        height: 80px;
     }
 
     .univ-location {
@@ -2564,7 +2669,9 @@ ul li img {
         margin: 0px;
     }
 
-
+    .article-author {
+        margin-top: 0px;
+    }
 
 
     .grey-joy {
@@ -2876,7 +2983,7 @@ ul li img {
     }
 
     .clg-feature-info {
-        padding: 30px;
+        padding: 0px 30px 10px 30px;
     }
 
     /*   .stuz-cont-bar {
@@ -2896,6 +3003,12 @@ ul li img {
     .university-block {
         margin: 0px 0px 25px 0px;
         height: auto !important;
+    }
+
+    .university-block-mbl {
+        margin: 0px 0px 25px 0px;
+        height: auto !important;
+        padding: 0px;
     }
 
     .brand-motto {
