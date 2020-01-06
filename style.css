@@ -2025,7 +2025,7 @@ ul li img {
 .terms-wrap {
     font-family: 'Avenir-Book';
     font-size: 18px;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 
 .terms-wrap a {
@@ -2613,11 +2613,34 @@ ul li img {
 
     #mbl-stu-carousal {
         display: block;
+        padding-bottom: 0px;
     }
 
     #web-stu-carousal {
         display: none;
     }
+
+    .uni-btn-wrap {
+        text-align: right;
+        margin-top: 0px;
+    }
+
+    .all-uni-btn {
+        font-size: 20px;
+    }
+
+     .all-article-btn {
+        font-size: 20px;
+    }
+
+    .team-header {
+        margin-bottom: 0px;
+    }
+
+    #dir-slide {
+        padding: 0px;
+    }
+
 
     .plug-screen {
         background-size: contain;
@@ -2713,6 +2736,7 @@ ul li img {
         font-size: 18px;
         display: flex;
         justify-content: space-around;
+        white-space: pre-wrap;
     }
 
     .stu-bios {
